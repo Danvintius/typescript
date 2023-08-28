@@ -1,11 +1,11 @@
 class Cart {
-	private items = [];
+	private items = [{price: 200, id: 1}];
 
 	totalCost(): number {
 	  let sum: number = 0;
 
-	  for (let i = 0; i < items.length; i++) {
-  		sum = sum + items[i].price;
+	  for (let i = 0; i < this.items.length; i++) {
+  		sum = sum + this.items[i].price;
 	  }
 
 	  return sum;
@@ -16,6 +16,6 @@ class Cart {
 	}
 
 	removeItem(itemToRemove: number): void {
-		items.filter((item) => item.id !== itemToRemove);
+		this.items.filter((item) => item.id !== itemToRemove);
 	}
 }
