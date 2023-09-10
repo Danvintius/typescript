@@ -20,9 +20,9 @@
   "author": "Danvintius",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.7.7",
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
+    "@babel/cli": "^7.22.15",
+    "@babel/core": "^7.22.17",
+    "@babel/preset-env": "^7.22.15",
     "@types/jest": "^24.0.24",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
@@ -44,6 +44,6 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
-    "core-js": "^3.6.0"
+    "core-js": "^3.32.2"
   }
 }

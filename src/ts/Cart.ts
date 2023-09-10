@@ -1,5 +1,5 @@
 class Cart {
-	private items = [{price: 200, id: 1}];
+	public items = [{id: 10, price: 100}];
 
 	totalCost(): number {
 	  let sum: number = 0;
@@ -16,6 +16,8 @@ class Cart {
 	}
 
 	removeItem(itemToRemove: number): void {
-		this.items.filter((item) => item.id !== itemToRemove);
+		this.items = this.items.filter((item) => item.id !== itemToRemove);
 	}
 }
+
+export default Cart;
