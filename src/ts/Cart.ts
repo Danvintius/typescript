@@ -1,5 +1,11 @@
+import Buyable from './Buyable'
+
 class Cart {
-	public items = [{id: 10, price: 100}];
+	private items: Buyable[] = [];
+
+	add(item): void {
+		this.items.push(item);
+	}
 
 	totalCost(): number {
 	  let sum: number = 0;
